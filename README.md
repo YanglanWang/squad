@@ -20,7 +20,4 @@
 5. Browse the code in `train.py`
     1. The `train.py` script is the entry point for training a model. It reads command-line arguments, loads the SQuAD dataset, and trains a model.
     2. You may find it helpful to browse the arguments provided by the starter code. Either look directly at the `parser.add_argument` lines in the source code, or run `python train.py -h`.
-=======
-# squad
-QA project for squad
->>>>>>> 757cf8ec696df26a4b5e776a5533afc8e72e8dcc
+
