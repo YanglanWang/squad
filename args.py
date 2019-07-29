@@ -135,7 +135,8 @@ def get_train_args():
                         default=0.999,
                         help='Decay rate for exponential moving average of parameters.')
 
-    args = parser.parse_args()
+    # args = parser.parse_args()
+    args = parser.parse_args(['--name','baseline'])
 
     if args.metric_name == 'NLL':
         # Best checkpoint is the one that minimizes negative log-likelihood

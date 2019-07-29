@@ -46,6 +46,9 @@ def download_url(url, output_path, show_progress=True):
 
 def url_to_data_path(url):
     return os.path.join('./data/', url.split('/')[-1])
+# distract glove.840B.300d.zip
+
+
 
 
 def download(args):
@@ -179,7 +182,8 @@ def get_embedding(counter, data_type, limit=-1, emb_file=None, vec_size=None, nu
                     for token, idx in token2idx_dict.items()}
     emb_mat = [idx2emb_dict[idx] for idx in range(len(idx2emb_dict))]
     return emb_mat, token2idx_dict
-
+# emb_mat: size(len(vocabulary, vec_size)
+# token2idx_dict[token]=idx
 
 def convert_to_features(args, data, word2idx_dict, char2idx_dict, is_test):
     example = {}
